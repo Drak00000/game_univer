@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style_article.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+    <title>Article</title>
+    <script src="../JavaScript/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo" />
+            </div>
+            <h1>article</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i>accueil</a></li>
+                    <li><a href="date.html"><i class="fa-solid fa-location-dot"></i>date</a></li>
+                    <li><a href="article.html"><i class="fa-solid fa-dungeon"></i>article</a></li>
+                    <li><a href="contacte.html"><i class="fa-solid fa-envelope"></i>contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <div id="page-wrapper">
+    <div id="left-sidebar">
+      <!-- Barre de recherche -->
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Rechercher par nom..." />
+        <select id="category-select">
+          <option value="">Toutes catégories</option>
+          <option value="action">Action</option>
+          <option value="rpg">RPG</option>
+          <option value="aventure">Aventure</option>
+          <option value="strategie">Stratégie</option>
+          <option value="sport">Sport</option>
+        </select>
+      </div>
+    </div>
+
+           
+
+    <main>
+        <div class="jeu-block" data-category="Action">
+            <div class="jeu-image" style="background-image: url('../images/jeu1.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+                <small>Catégorie : Action</small>
+            </div>
+        </div>
+
+        <div class="jeu-block" data-category="RPG">
+            <div class="jeu-image" style="background-image: url('../images/jeu2.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 2</h3>
+                <p>Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+                <small>Catégorie : RPG</small>
+            </div>
+        </div>
+        <div class="jeu-block">
+            <div class="jeu-image" style="background-image: url('../images/jeu1.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+        </div>
+
+        <div class="jeu-block">
+            <div class="jeu-image" style="background-image: url('../images/jeu2.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 2</h3>
+                <p>Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+            </div>
+        </div>
+
+        <div class="jeu-block">
+            <div class="jeu-image" style="background-image: url('../images/jeu3.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 3</h3>
+                <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+            </div>
+        </div>
+
+        <div class="jeu-block">
+            <div class="jeu-image" style="background-image: url('../images/jeu4.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 4</h3>
+                <p>Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+            </div>
+        </div>
+
+        <div class="jeu-block">
+            <div class="jeu-image" style="background-image: url('../images/jeu5.jpg');"></div>
+            <div class="jeu-description">
+                <h3>Nom du Jeu 5</h3>
+                <p>Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_logo">
+            <img src="" alt="" />
+        </div>
+        <p>Copyright © 2025 Tous droits réservés</p>
+        <div class="footer_copyright">
+            <a href="politique et confidantialitée/mention_légales.html">Mention légales</a>
+            <a href="politique et confidantialitée/politique_de_confidentialité.html">Politique de confidentialité</a>
+            <a href="politique et confidantialitée/sécurité.html">Sécurité</a>
+            <a href="politique et confidantialitée/conditions_générales_d'utilisation.html">Conditions générales d'utilisation</a>
+            <div class="footer_reso">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="separation"></div>
+        <a href="article.html">Retour en haut <i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+
+    <button id="btn-top" title="Retour en haut"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>

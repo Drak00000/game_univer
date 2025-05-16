@@ -1,0 +1,181 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/* Assure que le HTML et le body occupent toute la hauteur */
+html, body {
+    height: 100%;         /* L'élément HTML et body prennent toute la hauteur */
+    margin: 0;            /* Supprimer les marges par défaut */
+    padding: 0;           /* Supprimer le padding par défaut */
+}
+
+/* Style du body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fond clair */
+    color: #000;         /* Texte sombre */
+    line-height: 1.6;       /* Espacement entre les lignes */
+    overflow-y: auto;       /* Permet le défilement vertical */
+    display: flex;
+    flex-direction: column;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+/* Header */
+header {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.logo {
+    flex: 0 1 auto;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-left: 0;
+    padding-left: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+nav {
+    flex: 0 1 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+}
+
+nav ul li a:hover {
+    color: #50042e;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+footer {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+footer .footer_copyright {
+    display: flex;                  /* Utilisation de Flexbox */
+    justify-content: space-evenly;   /* Espacement égal entre les éléments */
+    align-items: center;            /* Centrage vertical des liens */
+    width: 80%;                      /* Largeur de la div pour avoir des bords */
+    margin: 0 auto;                  /* Centrer la div par rapport à la page */
+}
+
+footer .footer_copyright a {
+    padding: 0 15px;                 /* Espacement entre chaque lien */
+}
+
+footer .footer_logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer .separation {
+    margin: 20px 0;
+    border-top: 1px solid #444;      /* Séparation visuelle entre les sections */
+}
+
+footer .footer_copyright a {
+    flex: 1;                         /* Chaque lien prend une proportion égale */
+    text-align: center;              /* Centrer le texte dans chaque lien */
+}
+
+footer .footer_copyright a{
+    color:#fff;
+    transition: 1s ;
+}
+
+footer .footer_copyright a:hover{
+    color: #52004e ;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.separation {
+    width: 100%;
+    height: 1px;
+    background-color: #cecece;
+}
+
+#btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 16px;
+    font-size: 20px;
+    background-color: #52004e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btn-top:hover {
+    background-color: #75006e;
+    transform: scale(1.1);
+}
